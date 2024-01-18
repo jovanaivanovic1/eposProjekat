@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dečije igračke</title>
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevatezoom.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+   
+
+    <header>
+        <img src="images/Logo.jpeg" alt="Logo">
+        
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+             
+        <nav id="main-nav">
+            <a href="Index.html">Početna</a>
+            <a href="Igračke.html">Igračke</a>
+            <a href="Kontakt.html">Kontakt</a>
+            <a href="OstaviOcenu.html">Ostavi ocenu</a>
+        </nav>
+    </header>
+    
+    <main>
+        <img src="images/pozadina1.png" alt="pozadina1" class="background-image1">
+            
+        
+       
+            <img src="images/Igracke.png" alt="naslovna" class="naslovna-image">
+            <div class="search-container">
+                <input type="text" id="searchInput" oninput="searchToys()" placeholder="Pretraži igračke...">
+            </div>
+            <div class="sorting-container">
+                <select id="sortPrice" onchange="sortToys()">
+                    <option value="asc">Cena - Rastuće</option>
+                    <option value="desc">Cena - Opadajuće</option>
+                </select>
+            </div>
+            
+            <section class="toy-cards-container">
+       
+                <div class="toy-card">
+                    <img src="images/kocka.png" alt="Kocka za razvijanje motorike - natur" class="toy-image" data-zoom-image="images/kocka.png">
+                    <div class="toy-info">
+                        <h3 class="toy-title">Kocka za razvijanje motorike - Cena 16 990RSD</h3>
+                        <p class="toy-description">Montesori Natur interaktivna kocka utiče na razvoj fine motorike,
+                            taktalne, slušne i čulne percepcije.<br><br>*Sve igračke možete poručiti putem mejla office@pikpok.rs*</p>
+                    </div>
+                </div>
+
+                <div class="toy-card">
+                    <img src="images/pisibrisi.png" alt="Kućica za lutke" class="toy-image">
+                    <div class="toy-info">
+                        <h3 class="toy-title">Piši briši tabla - Cena 6500RSD</h3>
+                        <p class="toy-description">Crtanje po zidovima? Crtanje po celom stanu?🤦‍♀️ Zvuči vam poznato? Rešimo se toga!<br><br>*Sve igračke možete poručiti putem mejla office@pikpok.rs*</p>
+                    </div>
+                </div>
+                <div class="toy-card">
+                    <img src="images/merdevineStolica.png" alt="Stolica - merdevine" class="toy-image">
+                    <div class="toy-info">
+                        <h3 class="toy-title">Rasklopiva stolica merdevine - Cena 16 000RSD</h3>
+                        <p class="toy-description">Drvena sklopiva stolica sada i u boji, prava atrakcija i za decu i za roditelje! <br> <br>*Sve igračke možete poručiti putem mejla office@pikpok.rs*</p>
+                    </div>
+                </div>
+                <div class="toy-card">
+                    <img src="images/Ofinger.png" alt="Personalizovani ofinger" class="toy-image">
+                    <div class="toy-info">
+                        <h3 class="toy-title">Personalizovani ofinger - cena 3000RSD</h3>
+                        <p class="toy-description">Prelep personalizovani ofinger, moguća izrada sa imenom, mogućnost odabira boje i simbola.<br><br>*Sve igračke možete poručiti putem mejla office@pikpok.rs*</p>
+                    </div>
+                </div>
+                <div class="toy-card">
+                    <img src="images/brodzapesak.png" alt="Brod za pesak" class="toy-image">
+                    <div class="toy-info">
+                        <h3 class="toy-title">Dečiji brod za pesak - Cena 41 000RSD</h3>
+                        <p class="toy-description">Brodić se radi u dimenzijama 205 x 147 x 153cm, ručno se oslikava se po vašoj želji vodenim bojama i lakovima. <br><br>*Sve igračke možete poručiti putem mejla office@pikpok.rs*</p>
+                    </div>
+                </div>
+                <div class="toy-card">
+                    <img src="images/tabla.png" alt="Interaktivna personalizovana tabla" class="toy-image">
+                    <div class="toy-info">
+                        <h3 class="toy-title">Interaktivna personalizovana tabla - Cena 21 800RSD</h3>
+                        <p class="toy-description">Interaktivna tabla utiče na razvoj koordinacije fine motorike, slušne percepcije, učenja boja i oblika...<br><br>*Sve igračke možete poručiti putem mejla office@pikpok.rs*</p>
+                    </div>
+                </div>
+                <div class="toy-card">
+                    <img src="images/kockamotorika.png" alt="Kocka za razvijanje motorike - u boji" class="toy-image">
+                    <div class="toy-info">
+                        <h3 class="toy-title">Kocka za razvijenje motorike - u boji - Cena 16 990RSD</h3>
+                        <p class="toy-description">Montesori Obojena interaktivna kocka utiče na razvoj fine motorike,
+                            taktalne, slušne i čulne percepcije.<br> <br>*Sve igračke možete poručiti putem mejla office@pikpok.rs*</p>
+                    </div>
+                </div>
+                <div class="toy-card">
+                    <img src="images/ljuljaska.png" alt="Trapez ljuljaska" class="toy-image">
+                    <div class="toy-info">
+                        <h3 class="toy-title">Trapez juljaska - Cena 3500RSD</h3>
+                        <p class="toy-description">Idealna za vežbanje motorike, snage i izdržljivosti. Predstavlja pravu zabavu mališanima. U setu dolaze i kuke za kačenje.<br><br>*Sve igračke možete poručiti putem mejla office@pikpok.rs*</p>
+                    </div>
+                </div>
+
+                <div class="toy-card">
+                    <img src="images/bike.png" alt="Balans Bike" class="toy-image">
+                    <div class="toy-info">
+                        <h3 class="toy-title">Balans bicikl M/Ž - Cena <br> 11 500RSD</h3>
+                        <p class="toy-description">Balans bicikla potpomaže razvoju krupne motorike i razvijanju fizičkih sposobnosti. <br><br>*Sve igračke možete poručiti putem mejla office@pikpok.rs*</p>
+                    </div>
+                </div>
+
+
+            </section>
+        
+
+
+    
+
+
+</main>
+    <footer>
+        <p class="copyright">© 2023 Sva prava zadržana.</p>
+    </footer>    
+    <script>
+        $(document).ready(function() {
+            $('.toy-image').elevateZoom({
+                zoomType: "lens",
+                lensShape: "round",
+                lensSize: 200,
+                borderSize: 1,
+                borderColour: '#888',
+                scrollZoom: true,
+                easing: true
+            });
+        });
+        </script>
+        
+    <script src="JS/main.js"></script>
+</body>
+</html>
