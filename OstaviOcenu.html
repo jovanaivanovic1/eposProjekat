@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dečije igračke - Oceni</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <img src="images/pozadina.png" alt="pozadina" class="background-image">
+
+    <header>
+        <img src="images/Logo.jpeg" alt="Logo">
+        
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+             
+        <nav id="main-nav">
+            <a href="Index.html">Početna</a>
+            <a href="Igračke.html">Igračke</a>
+            <a href="Kontakt.html">Kontakt</a>
+            <a href="OstaviOcenu.html">Ostavi ocenu</a>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <div class="ocenjivanje">       
+                <div id="averageRating">Prosečna ocena: <span id="avgRatingValue">0</span>/5</div>
+         
+            <form id="ratingForm">
+                <div class="rating-container">
+                    <div class="star-rating">
+                        <input type="radio" id="5-stars" name="rating" value="5" />
+                        <label for="5-stars" class="star">&#9733;</label>
+                        <input type="radio" id="4-stars" name="rating" value="4" />
+                        <label for="4-stars" class="star">&#9733;</label>
+                        <input type="radio" id="3-stars" name="rating" value="3" />
+                        <label for="3-stars" class="star">&#9733;</label>
+                        <input type="radio" id="2-stars" name="rating" value="2" />
+                        <label for="2-stars" class="star">&#9733;</label>
+                        <input type="radio" id="1-star" name="rating" value="1" />
+                        <label for="1-star" class="star">&#9733;</label>
+                    </div>
+                </div>
+                <input type="text" id="name" name="name" placeholder="Vaše ime" required />
+                <textarea id="comment" name="comment" placeholder="Vaš komentar" maxlength="50" required></textarea>
+                <button type="submit">Pošalji</button>
+            </form>
+            <div id="comments"></div>
+        </div></div>
+    </div>
+</main>
+    <footer>
+        <p class="copyright">© 2023 Sva prava zadržana.</p>
+    </footer>    
+    <script src="JS/main.js"></script>
+</body>
+</html>
